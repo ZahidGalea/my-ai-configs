@@ -24,6 +24,15 @@
         "BASE_DIR": "/Users/zaga/Projects/Personal/my-ai-configs/docs-for-rag",
         "RAG_GROUPING": "similar"
       }
+    },
+    "context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+      "env": {}
     }
   }
 }
