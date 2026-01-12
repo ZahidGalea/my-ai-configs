@@ -13,6 +13,17 @@
         "-y",
         "next-devtools-mcp@latest"
       ]
+    },
+    "local-rag": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-local-rag"
+      ],
+      "env": {
+        "BASE_DIR": "/Users/zaga/Projects/Personal/my-ai-configs/docs-for-rag",
+        "RAG_GROUPING": "similar"
+      }
     }
   }
 }

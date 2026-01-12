@@ -1,0 +1,6 @@
+./lancedb
+lancedb/**
+models/**
+./models
+./models/**
+./lancedb/**
