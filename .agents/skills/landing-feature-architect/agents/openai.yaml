@@ -1,0 +1,4 @@
+interface:
+  display_name: "Landing Feature Architect"
+  short_description: "Diseña features firma para landings"
+  default_prompt: "Use $landing-feature-architect to choose and implement the most compelling brand-aligned feature for this landing."

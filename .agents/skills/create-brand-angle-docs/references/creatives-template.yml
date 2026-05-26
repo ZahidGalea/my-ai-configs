@@ -1,0 +1,64 @@
+# Angle Creatives Template
+#
+# Use this shape for new brands/<brand>/angles/<angle-id>-<slug>-creatives.yml files.
+# This file holds ONLY the image/slide generation prompts. Meta ad copy lives in
+# the sibling <angle-id>-<slug>-copies.yml file.
+#
+# Rules:
+# - At least 3 packs (PK01, PK02, PK03...) unless the user asks for fewer.
+# - Each creative item has: id, kind (image | slide), title, prompt.
+# - For a single image use kind: image and title: null.
+# - For a carousel use kind: slide, one item per slide, with a descriptive title
+#   (e.g. "Problema / Gancho", "Prueba / Evidencia", "Mecanismo / Proceso", "CTA").
+# - id pattern: <ANGLE-ID>-PK01-IMG  ·  <ANGLE-ID>-PK01-CAR-SLIDE-01
+# - Write every prompt in structured English following the sections below.
+# - Render all in-image copy verbatim in the target language, with correct accents.
+
+brand: <brand-id>
+angle_id: <ANGLE-ID>
+source: brands/<brand-id>/angles/<angle-id>-<slug>-creatives.yml
+creatives:
+  - id: <ANGLE-ID>-PK01-IMG
+    kind: image
+    title: null
+    prompt: |-
+      Create a polished single-image Meta ad for <Brand Name>.
+      Audience: <who sees this ad and their state of mind>.
+      Positioning: <what the brand/tool is, in one calm sentence>.
+      Visual concept: <the core visual idea in one or two sentences>.
+      Composition: <background color with hex, dominant focal element and its share
+        of the canvas, placement of headline / CTA / secondary elements, safe margins>.
+      Visual direction: <mood, surfaces, exact brand hex values and their roles,
+        what the piece must feel like>.
+      Typography: <headline font style, body/label font style, language and accent
+        rendering requirements>.
+      Exact text, render each string exactly once, verbatim, with correct accents:
+        Headline: "<headline>"
+        Subheadline: "<subheadline>"
+        CTA: "<cta>"
+        Tiny disclaimer: "<required disclaimer>"
+      Text controls: <max number of text elements, button styling, disclaimer
+        placement, brand-name spelling note if needed>.
+      STRICT EXCLUSIONS: <comma-separated list of everything that must NOT appear:
+        prohibited claims, prohibited visual cues, watermarks, unrelated logos, etc.>.
+
+  - id: <ANGLE-ID>-PK02-IMG
+    kind: image
+    title: null
+    prompt: |-
+      <same structure as PK01-IMG, one dominant idea per pack>
+
+  - id: <ANGLE-ID>-PK03-IMG
+    kind: image
+    title: null
+    prompt: |-
+      <same structure as PK01-IMG, one dominant idea per pack>
+
+  # Optional carousel example (omit if the run only produces single images):
+  # - id: <ANGLE-ID>-PK01-CAR-SLIDE-01
+  #   kind: slide
+  #   title: Problema / Gancho
+  #   prompt: |-
+  #     Create slide 1 of a Meta carousel ad for <Brand Name>. Make it work as a
+  #     standalone hook.
+  #     <same structured English sections as the image prompts above>

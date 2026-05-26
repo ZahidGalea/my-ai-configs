@@ -1,0 +1,4 @@
+interface:
+  display_name: "GPT Image 2 Prompt Improver"
+  short_description: "Mejora prompts para gpt-image-2"
+  default_prompt: "Use $gpt-image-2-prompt-improver to turn this rough image idea into a production-ready gpt-image-2 prompt."

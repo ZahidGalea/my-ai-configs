@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brand Video Creative"
+  short_description: "Crea videos Remotion por marca"
+  default_prompt: "Use $create-brand-video-creative to build a Remotion video creative for a brand angle."

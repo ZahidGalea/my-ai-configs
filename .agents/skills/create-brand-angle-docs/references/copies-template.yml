@@ -1,0 +1,58 @@
+# Angle Copies Template
+#
+# Use this shape for new brands/<brand>/angles/<angle-id>-<slug>-copies.yml files.
+# This file holds the Meta ad copy and angle metadata. Image/slide generation
+# prompts live in the sibling <angle-id>-<slug>-creatives.yml file.
+#
+# Rules:
+# - ads_copy gives the DCO system differentiated signal: 3-5 primary_text variants
+#   covering the three tones hook (problem/curiosity), prueba (proof/evidence) and
+#   mecanismo (how it works); 3-5 headline variants; 3-5 description variants.
+# - Keep copy aligned with brand.md tone, vocabulary and compliance.
+# - Do not reuse the exact in-image strings from creatives.yml; this copy
+#   complements the visuals.
+# - cta_button uses Meta CTA enum values (e.g. LEARN_MORE, GET_QUOTE, SIGN_UP).
+
+angle_id: <ANGLE-ID>
+brand: <brand-id>
+slug: <slug>
+landing_url: https://<domain>/<route>
+
+core_message: "<one-sentence core message of the angle>"
+audience_pain: "<the main pain of the audience for this angle>"
+proof_anchor: "<the concrete mechanism or proof that makes the angle credible>"
+
+ads_copy:
+  primary_text:  # --bodies en meta ads creative create (3-5 variantes)
+    - text: "<primary text variant>"
+      angle_tone: hook
+    - text: "<primary text variant>"
+      angle_tone: prueba
+    - text: "<primary text variant>"
+      angle_tone: mecanismo
+
+  headline:  # --titles (3-5 variantes)
+    - text: "<headline variant>"
+    - text: "<headline variant>"
+    - text: "<headline variant>"
+
+  description:  # --descriptions (3-5 variantes)
+    - text: "<description variant>"
+    - text: "<description variant>"
+    - text: "<description variant>"
+
+  cta_button:
+    primary: LEARN_MORE
+    alternates:
+      - GET_QUOTE
+
+creatives_ref:
+  - <ANGLE-ID>-PK01-IMG
+  - <ANGLE-ID>-PK02-IMG
+  - <ANGLE-ID>-PK03-IMG
+
+compliance_notes: |
+  - <how this copy stays inside the brand.md compliance section>
+  - <prohibited terms confirmed absent>
+  - <disclaimer required on creatives>
+  - <why the chosen primary CTA fits the landing experience>

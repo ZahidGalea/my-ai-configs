@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Brand Landing"
+  short_description: "Build landings from brand assets"
+  default_prompt: "Use $create-brand-landing to create a new landing from a brand under brands/."
