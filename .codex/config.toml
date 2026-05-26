@@ -1,0 +1,35 @@
+[agents]
+max_threads = 6
+max_depth = 1
+
+[agents.pr_explorer]
+description = "Read-only codebase explorer for gathering evidence before changes are proposed."
+config_file = "agents/pr-explorer.toml"
+
+[agents.reviewer]
+description = "PR reviewer focused on correctness, security, and missing tests."
+config_file = "agents/reviewer.toml"
+
+[agents.docs_researcher]
+description = "Documentation specialist that uses the docs MCP server to verify APIs and framework behavior."
+config_file = "agents/docs-researcher.toml"
+
+[agents.code_mapper]
+description = "Read-only codebase explorer for locating the relevant frontend and backend code paths."
+config_file = "agents/code-mapper.toml"
+
+[agents.browser_debugger]
+description = "UI debugger that uses browser tooling to reproduce issues and capture evidence."
+config_file = "agents/browser-debugger.toml"
+
+[agents.ui_fixer]
+description = "Implementation-focused agent for small, targeted fixes after the issue is understood."
+config_file = "agents/ui-fixer.toml"
+
+[agents.frontend-craft-specialist]
+description = "Frontend engineer and interaction designer for building, reviewing, and improving Intelligence Hub UI."
+config_file = "agents/frontend-craft-specialist.toml"
+
+[agents.playwright-tester]
+description = "Playwright end-to-end testing specialist for writing, running, debugging, and maintaining browser tests, selectors, traces, screenshots, and Playwright configuration."
+config_file = "agents/playwright-tester.toml"
